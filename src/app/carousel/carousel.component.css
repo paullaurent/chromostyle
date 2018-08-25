@@ -1,0 +1,28 @@
+ img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+div{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 130%;
+}
+
+.arrow{
+    margin-top: 15%;
+    background-color: transparent;
+}
+
+.caption{
+    margin-left: 10%;
+    margin-right: 10%;
+    color:white;
+}
+.button{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 200%
+}

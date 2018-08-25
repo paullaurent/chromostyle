@@ -1,0 +1,42 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.bandeau{
+    min-width: 100%;
+}
+.header{
+    margin-bottom: 1%
+}
+.info{
+    display: flex
+}
+.maps{
+    display: flex;
+    cursor: pointer;
+}
+.mail{
+    cursor: pointer;
+    display: flex
+}
+.logo{
+    color : #3366ff;
+}
+.first_line{
+    border-width: 2px
+}
+.second_line{
+    border-color:#3366ff;
+    border-width: 3px;
+}
+.title{
+    font-weight: bold
+}
+.description{
+    color : gray
+}
+
+button.mat-button{
+    font-family: Lato;
+    color: grey
+}
+.image{
+    cursor: pointer;
+}

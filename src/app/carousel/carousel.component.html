@@ -1,0 +1,18 @@
+<div fxLayout>
+  <div fxFlex="22%">
+    <br>
+    <br>
+     <div class = "caption">
+      "{{caption}}"
+     </div>
+  </div>
+      <div class="arrow">
+          <mat-icon class="button" (click)="previousImage()">keyboard_arrow_left</mat-icon>
+        </div>
+            <img src ={{image}} />
+        <div class="arrow">
+            <mat-icon class="button" (click)="nextImage()">keyboard_arrow_right</mat-icon>
+          </div>
+  <div fxFlex="22%"></div>
+</div>
+  
