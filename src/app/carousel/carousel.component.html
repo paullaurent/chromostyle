@@ -1,13 +1,9 @@
 <div fxLayout>
-  <div class="edge" fxFlex="15%">
-    <br>
-    <br>
-     <div class = "caption">
-      "{{caption}}"
-     </div>
-  </div>
+  
+  <div class="edge" fxFlex="15%"></div>
+
   <div class="carousel" fxFlex >
-    <slideshow #slideshow
+    <app-slideshow #slideshow
     (onSlideRight)="nextImage()"
     (onSwipeRight)="nextImage()"
     [autoPlay]="true"
@@ -19,7 +15,7 @@
     [showCaptions]="true"
     [showDots]="true"
     [dotColor]="'#FFFFFF'">
-  </slideshow>
+  </app-slideshow>
   </div>
 
   <div class="edge" fxFlex="15%"></div>

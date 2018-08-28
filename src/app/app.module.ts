@@ -13,6 +13,9 @@ import { MentionsComponent } from './mentions/mentions.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SwipeService } from './slideshow/swipe.service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     carouselComponent,
     FooterComponent,
     MentionsComponent,
-    AccueilComponent
+    AccueilComponent,
+    SlideshowComponent,
 
   ],
   imports: [
@@ -36,7 +40,10 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     NgbModule,
     SlideshowModule
   ],
-  providers: [],
+  exports:[
+    SlideshowComponent
+  ],
+  providers: [SwipeService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
