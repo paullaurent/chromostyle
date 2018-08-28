@@ -12,9 +12,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MentionsComponent } from './mentions/mentions.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {SlideshowModule} from 'ng-simple-slideshow';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SwipeService } from './slideshow/swipe.service';
+import { TransferState } from '@angular/platform-browser';
+import{ NotfoundComponent } from './notfound/notfound.component'
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { SwipeService } from './slideshow/swipe.service';
     MentionsComponent,
     AccueilComponent,
     SlideshowComponent,
+    NotfoundComponent
 
   ],
   imports: [
@@ -37,13 +39,13 @@ import { SwipeService } from './slideshow/swipe.service';
     MatButtonModule,
     MatToolbarModule,
     HttpClientModule,
-    NgbModule,
-    SlideshowModule
+    NgbModule
   ],
   exports:[
     SlideshowComponent
   ],
-  providers: [SwipeService],
+  providers: [SwipeService,
+    TransferState],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
