@@ -1,11 +1,9 @@
 <div fxLayout>
-  
+
   <div class="edge" fxFlex="15%"></div>
 
   <div class="carousel" fxFlex >
-    <app-slideshow #slideshow
-    (onSlideRight)="nextImage()"
-    (onSwipeRight)="nextImage()"
+    <app-slideshow
     [autoPlay]="true"
     [showArrows]="true"
     [imageUrls]="images"
