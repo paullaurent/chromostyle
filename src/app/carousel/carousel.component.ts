@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 
 import { interval, Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-carousel',
@@ -10,11 +11,13 @@ import { interval, Observable } from 'rxjs';
 export class carouselComponent implements OnInit {
   @Input() images: string[];
   @Input() captions :string[];
+  @ViewChild("#slideshow") slideshow: any;
   image: string;
   caption : string;
   numImage:number=0
 
   ngOnInit(): void {
+
     if (this.images) {
       this.image = this.images[0]
       this.caption=this.captions[0]
@@ -38,7 +41,8 @@ export class carouselComponent implements OnInit {
       this.caption=this.captions[this.numImage];
   }
   
-  previousImage(){
+  previousImage($event){
+    console.log("coucou")
     this.numImage--;
       if (this.numImage<0){
         this.numImage=this.images.length-1;

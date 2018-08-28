@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent {
-  images=["../assets/carousel1.jpg","../assets/carousel2.jpg","../assets/carousel3.jpg"]
+  images=["../assets/carousel1.jpg","../assets/carousel2.jpg","../assets/carousel3.jpg","../assets/carousel4.jpg"]
 captions=["Une équipe du tonnerre","De vrais professionnels","Toujours à l\'écoute"];
 
 

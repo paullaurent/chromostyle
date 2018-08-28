@@ -10,7 +10,9 @@ import { MatIconModule,MatMenuModule, MatButtonModule, MatToolbarModule } from '
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HttpClientModule } from '@angular/common/http';
 import { MentionsComponent } from './mentions/mentions.component';
-import { AccueilComponent } from './accueil/accueil.component'
+import { AccueilComponent } from './accueil/accueil.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { AccueilComponent } from './accueil/accueil.component'
     MatButtonModule,
     MatToolbarModule,
     HttpClientModule,
+    NgbModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
