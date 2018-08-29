@@ -1,3 +1,41 @@
-<app-header></app-header>
-<app-carousel [images]="images"></app-carousel>
-<app-footer></app-footer>
+<app-carousel class="carousel" [images]="images"></app-carousel>
+<div class="container" fxLayout="row" fxLayoutGap="2%">
+    <div fxFlex></div>
+    <mat-card fxFlex="30%">
+        <mat-card-title class="card-title">Publication</mat-card-title>
+        <mat-card-content>
+            <ul>
+                <li>Composition</li>
+                <li>Mise en page traditionnelle</li>
+                <li>Mise en page automatisée</li>
+                <li>Nos outils de publication</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="30%">
+        <div class="card-title">Photogravure</div>
+        <mat-card-content>
+            <ul>
+                <li>Numérisation</li>
+                <li>Traitement de l'image et de la couleur</li>
+                <li>Epreuvage</li>
+                <li>Validation à distance</li>
+                <li>Gestion de flux</li>
+                <li>Galerie d'images</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="30%">
+        <mat-card-title class="card-title">Informatique éditoriale</mat-card-title>
+        <mat-card-content>
+            <ul>
+                <li>Ingéniérie et développement</li>
+                <li>Structuration de données</li>
+                <li>Livres électroniques</li>
+                <li>Bases de données</li>
+                <li>Internet</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    <div fxFlex></div>
+</div>
