@@ -17,13 +17,13 @@
     display: flex
 }
 .logo{
-    color : #3366ff;
+    color : rgb(16,108,200);
 }
 .first_line{
     border-width: 2px
 }
 .second_line{
-    border-color:#3366ff;
+    border-color:rgb(16,108,200);
     border-width: 3px;
 }
 .title{
