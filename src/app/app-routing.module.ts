@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { MentionsComponent } from './mentions/mentions.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { PhotogravureComponent } from './photogravure/photogravure.component';
  
 
  
 const routes: Routes = [
   { path: 'mentions-legales', component:MentionsComponent},
+  { path: 'photogravure', component:PhotogravureComponent},
   { path : '', component:AccueilComponent},
   {path: '404', component: NotfoundComponent},
   {path: '**', component: NotfoundComponent},

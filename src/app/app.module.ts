@@ -15,7 +15,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SwipeService } from './slideshow/swipe.service';
 import { TransferState } from '@angular/platform-browser';
-import{ NotfoundComponent } from './notfound/notfound.component'
+import{ NotfoundComponent } from './notfound/notfound.component';
+import { PhotogravureComponent } from './photogravure/photogravure.component'
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import{ NotfoundComponent } from './notfound/notfound.component'
     MentionsComponent,
     AccueilComponent,
     SlideshowComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    PhotogravureComponent
 
   ],
   imports: [
