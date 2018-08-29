@@ -1,4 +1,18 @@
 .photogravure{
-    width: 66%;
-    margin:auto
+    margin:auto;
+    overflow: auto;
+}
+.description{
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+.images{
+    text-align: center
+}
+img{
+    width:320px;
+    height:240px;
+}
+.wrapper{
+    height:100%
 }
