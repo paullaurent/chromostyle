@@ -1,6 +1,5 @@
 .photogravure{
     margin:auto;
-    overflow: auto;
 }
 .description{
     padding-top: 1%;
@@ -13,6 +12,25 @@ img{
     width:320px;
     height:240px;
 }
-.wrapper{
-    height:100%
+.nav-list{
+    position: sticky;
+    top: 1px;
+    align-self: flex-start;
+    height: 100%
 }
+
+.title{
+    font-size:200%
+}
+
+.backtop{
+    display: none;
+    bottom: 10%;
+    position: fixed;
+    left : 93%;
+    color:white;
+    background-color: rgb(16,108,200);
+
+}
+
+.card-navlist{padding:0 ! important}

@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { carouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component'
 import { AppRoutingModule } from './/app-routing.module';
-import { MatIconModule,MatMenuModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatCardModule, MatListModule } from '@angular/material';
+import { MatIconModule,MatMenuModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HttpClientModule } from '@angular/common/http';
 import { MentionsComponent } from './mentions/mentions.component';
@@ -45,6 +45,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     MatCardModule,
     MatListModule,
+    MatDividerModule,
     HttpClientModule,
     BrowserAnimationsModule,
     NgbModule
