@@ -1,9 +1,14 @@
 <app-carousel class="carousel" [images]="images"></app-carousel>
 <div class="container" fxLayout="row" fxLayoutGap="2%">
     <div fxFlex></div>
-    <mat-card fxFlex="30%">
-        <mat-card-title class="card-title">Publication</mat-card-title>
-        <mat-card-content>
+    <mat-card class="card" fxFlex="30%">
+        <div class="card-title">
+            <button mat-fab class="circle">
+                <mat-icon>book</mat-icon>
+            </button>
+                    Publication
+        </div>
+        <mat-card-content class="content">
             <ul>
                 <li>Composition</li>
                 <li>Mise en page traditionnelle</li>
@@ -12,9 +17,14 @@
             </ul>
         </mat-card-content>
     </mat-card>
-    <mat-card fxFlex="30%">
-        <div class="card-title">Photogravure</div>
-        <mat-card-content>
+    <mat-card class="card" fxFlex="30%">
+            <div class="card-title">
+                    <button mat-fab class="circle">
+                        <mat-icon>book</mat-icon>
+                    </button>
+                            Photogravure
+                </div>
+        <mat-card-content class="content">
             <ul>
                 <li>Numérisation</li>
                 <li>Traitement de l'image et de la couleur</li>
@@ -25,9 +35,15 @@
             </ul>
         </mat-card-content>
     </mat-card>
-    <mat-card fxFlex="30%">
-        <mat-card-title class="card-title">Informatique éditoriale</mat-card-title>
-        <mat-card-content>
+    <mat-card class="card" fxFlex="30%">
+            <div class="card-title">
+                    <button mat-fab class="circle">
+                        <mat-icon>book</mat-icon>
+                    </button>
+                            Informatique éditoriale
+                </div>
+
+        <mat-card-content class="content">
             <ul>
                 <li>Ingéniérie et développement</li>
                 <li>Structuration de données</li>

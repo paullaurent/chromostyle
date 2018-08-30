@@ -1,13 +1,36 @@
+
 .card-title{
-    font-size: 110%
+    padding-left : 5%;
+    vertical-align: middle ;
+    font-size: 130%;
+    color:white;
+    background-color: rgb(16,108,200)
 }
 .carousel{
     padding: 1%
 }
 .card{
-    padding : 1%
+    padding-top : 0!important;
+    padding-left : 0!important;
+    padding-right : 0!important
 }
 
 .container{
     padding:1%;
+}
+
+.content{
+    padding-right:24px;
+    padding-top:12px;
+    padding-bottom:24px
+}
+.fa-circle{
+    
+    color:rgb(16,108,200);
+    
+}
+
+.circle{
+    background-color:rgb(16,108,200);;
+   color: white
 }
