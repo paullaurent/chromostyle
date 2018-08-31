@@ -18,6 +18,7 @@ import { TransferState } from '@angular/platform-browser';
 import{ NotfoundComponent } from './notfound/notfound.component';
 import { PhotogravureComponent } from './photogravure/photogravure.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EquipeComponent } from './equipe/equipe.component';
 
 
 
@@ -31,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AccueilComponent,
     SlideshowComponent,
     NotfoundComponent,
-    PhotogravureComponent
+    PhotogravureComponent,
+    EquipeComponent
 
   ],
   imports: [

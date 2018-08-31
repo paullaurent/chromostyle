@@ -47,8 +47,8 @@
         </div>
   </mat-card>
       <div fxLayout="row">
-          <button fxFlex="15%" mat-button [routerLink]="[ '/']">Accueil</button>
-          <button fxFlex="15%" mat-button>Notre équipe</button>
+          <button fxFlex="15%" mat-button [routerLink]="[ '/']" (selected)="true">Accueil</button>
+          <button fxFlex="15%" mat-button [routerLink]="[ '/equipe']">Notre équipe</button>
           <button fxFlex="15%" mat-button>Publication</button>
           <button fxFlex="15%" mat-button [routerLink]="[ '/photogravure']">Photogravure</button>
           <button fxFlex="15%" mat-button>Informatique éditoriale</button>

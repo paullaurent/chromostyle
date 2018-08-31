@@ -1,0 +1,42 @@
+.font{
+    text-align: center;
+    margin-bottom: 5%
+}
+
+.portrait{
+text-align: center
+}
+
+.name{
+    font-size: 110%
+}
+.job{
+font-size: 90%
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 150%
+}
+.title{
+    font-size: 200%
+}
+
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px
+}
+
+.divider{ margin-top:2%;
+margin-bottom: 2%}
+
+.kind{
+    padding-left: 2%;
+    margin-bottom:1%;
+    font-size:150%
+}
+
+div{
+    color: grey
+}
