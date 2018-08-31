@@ -3,7 +3,7 @@
     <div fxFlex></div>
     <mat-card class="card" fxFlex="30%">
         <div class="card-title">
-            <button mat-fab class="circle">
+            <button mat-fab class="circle" [routerLink]="[ '/publication']">
                 <mat-icon>book</mat-icon>
             </button>
                     Publication
@@ -19,8 +19,8 @@
     </mat-card>
     <mat-card class="card" fxFlex="30%">
             <div class="card-title">
-                    <button mat-fab class="circle">
-                        <mat-icon>book</mat-icon>
+                    <button mat-fab class="circle" [routerLink]="[ '/photogravure']">
+                        <mat-icon>color_lens</mat-icon>
                     </button>
                             Photogravure
                 </div>
@@ -37,8 +37,8 @@
     </mat-card>
     <mat-card class="card" fxFlex="30%">
             <div class="card-title">
-                    <button mat-fab class="circle">
-                        <mat-icon>book</mat-icon>
+                    <button mat-fab class="circle" [routerLink]="[ '/informatique']">
+                        <mat-icon>computer</mat-icon>
                     </button>
                             Informatique éditoriale
                 </div>
