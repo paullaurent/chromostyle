@@ -1,25 +1,27 @@
 <div class="header">
   <mat-card>
-      <div class="bandeau" fxLayout="row">
-          <div fxFlex="55%" >
-              <img src="../../assets/chromostyle_logo.png" [routerLink]="[ '/']" class="image"  height="70" />
+      <div class="bandeau">
+          <div class="chromostyle" >
+              <img src="../../assets/chromostyle_logo.png" [routerLink]="[ '/']" class="image"  height="90" />
           </div>
         
-          <div fxFlex="15%" class="maps" (click)="openMaps()">
+          <div class="maps" (click)="openMaps()">
             <mat-icon class="logo">home</mat-icon>
             <div>
-              <div class="title">
-                Nous trouver
-              </div>
-              <div class="description">
-                51, rue charles Coulomb
-              </div>
-              <div class="description">
-                37170, Chambray-lès-Tours
-              </div>
+                <div class="title">
+                    Nous trouver
+                  </div>
+                  <div class="description">
+                    <div>
+                        51, rue charles Coulomb
+                    </div>
+                    <div>
+                    37170, Chambray-lès-Tours
+                    </div>
+                </div>
             </div>
           </div>
-          <div fxFlex="15%" class="mail" (click)="openMail()">
+          <div class="mail" (click)="openMail()">
             <mat-icon class="logo">email</mat-icon>
             <div>
               <div class="title">
@@ -29,11 +31,11 @@
                 fabrication@chromostyle.fr
               </div>
               <div class="description">
-                  0626772282
+                  06 26 77 22 82
                 </div>
             </div>
           </div>
-          <div fxFlex="15%" class="info">
+          <div class="info">
               <mat-icon class="logo">query_builder</mat-icon>
               <div>
                 <div class="title">
@@ -46,13 +48,12 @@
             </div>
         </div>
   </mat-card>
-      <div fxLayout="row">
-          <button fxFlex="15%" mat-button [routerLink]="[ '/']" (selected)="true">Accueil</button>
-          <button fxFlex="15%" mat-button [routerLink]="[ '/equipe']">Notre équipe</button>
-          <button fxFlex="15%" mat-button>Publication</button>
-          <button fxFlex="15%" mat-button [routerLink]="[ '/photogravure']">Photogravure</button>
-          <button fxFlex="15%" mat-button>Informatique éditoriale</button>
-          <div fxFlex></div>
+      <div class="menu">
+          <button  mat-button [routerLink]="[ '/']" (selected)="true">Accueil</button>
+          <button  mat-button [routerLink]="[ '/equipe']">Notre équipe</button>
+          <button  mat-button>Publication</button>
+          <button  mat-button [routerLink]="[ '/photogravure']">Photogravure</button>
+          <button  mat-button>Informatique éditoriale</button>
       </div>
       
       <hr class="second_line">
