@@ -1,57 +1,60 @@
-<app-carousel class="carousel" [images]="images"></app-carousel>
-<div class="container" fxLayout="row" fxLayoutGap="2%">
-    <div fxFlex></div>
-    <mat-card class="card" fxFlex="30%">
-        <div class="card-title">
-            <button mat-fab class="circle" [routerLink]="[ '/publication']">
-                <mat-icon>book</mat-icon>
-            </button>
-                    Publication
+<div *ngIf="!isMobile">
+        <app-carousel class="carousel" [images]="images"></app-carousel>
+        <div class="container">
+            <mat-card class="card">
+                <div class="card-title">
+                    <button mat-fab class="circle" [routerLink]="[ '/publication']">
+                        <mat-icon>book</mat-icon>
+                    </button>
+                            Publication
+                </div>
+                <mat-card-content class="content">
+                    <ul>
+                        <li>Composition</li>
+                        <li>Mise en page traditionnelle</li>
+                        <li>Mise en page automatisée</li>
+                        <li>Nos outils de publication</li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card">
+                    <div class="card-title">
+                            <button mat-fab class="circle" [routerLink]="[ '/photogravure']">
+                                <mat-icon>color_lens</mat-icon>
+                            </button>
+                                    Photogravure
+                        </div>
+                <mat-card-content class="content">
+                    <ul>
+                        <li>Numérisation</li>
+                        <li>Traitement de l'image et de la couleur</li>
+                        <li>Epreuvage</li>
+                        <li>Validation à distance</li>
+                        <li>Gestion de flux</li>
+                        <li>Galerie d'images</li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card">
+                    <div class="card-title">
+                            <button mat-fab class="circle" [routerLink]="[ '/informatique']">
+                                <mat-icon>computer</mat-icon>
+                            </button>
+                                    Informatique éditoriale
+                        </div>
+        
+                <mat-card-content class="content">
+                    <ul>
+                        <li>Ingéniérie et développement</li>
+                        <li>Structuration de données</li>
+                        <li>Livres électroniques</li>
+                        <li>Bases de données</li>
+                        <li>Internet</li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
         </div>
-        <mat-card-content class="content">
-            <ul>
-                <li>Composition</li>
-                <li>Mise en page traditionnelle</li>
-                <li>Mise en page automatisée</li>
-                <li>Nos outils de publication</li>
-            </ul>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="card" fxFlex="30%">
-            <div class="card-title">
-                    <button mat-fab class="circle" [routerLink]="[ '/photogravure']">
-                        <mat-icon>color_lens</mat-icon>
-                    </button>
-                            Photogravure
-                </div>
-        <mat-card-content class="content">
-            <ul>
-                <li>Numérisation</li>
-                <li>Traitement de l'image et de la couleur</li>
-                <li>Epreuvage</li>
-                <li>Validation à distance</li>
-                <li>Gestion de flux</li>
-                <li>Galerie d'images</li>
-            </ul>
-        </mat-card-content>
-    </mat-card>
-    <mat-card class="card" fxFlex="30%">
-            <div class="card-title">
-                    <button mat-fab class="circle" [routerLink]="[ '/informatique']">
-                        <mat-icon>computer</mat-icon>
-                    </button>
-                            Informatique éditoriale
-                </div>
-
-        <mat-card-content class="content">
-            <ul>
-                <li>Ingéniérie et développement</li>
-                <li>Structuration de données</li>
-                <li>Livres électroniques</li>
-                <li>Bases de données</li>
-                <li>Internet</li>
-            </ul>
-        </mat-card-content>
-    </mat-card>
-    <div fxFlex></div>
+</div>
+<div *ngIf="isMobile">
+<div> Chromostyle est une entreprise de prépresse vous accompagnant dans tous vos projets. Notre expertise et notre réactivité sauront vous réussir</div>
 </div>

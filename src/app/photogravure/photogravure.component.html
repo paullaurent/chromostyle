@@ -1,4 +1,4 @@
-<div id="top" fxLayout="row" >
+<div id="top" fxLayout="row" *ngIf="!isMobile">
     <mat-nav-list fxFlex="20%" class="nav-list" >
         <a href="photogravure#numerisation" mat-list-item>Numérisation</a>
         <a href="photogravure#traitement" mat-list-item>Traitement de l'image et de la couleur</a>
@@ -14,29 +14,13 @@
             </div>
             <mat-divider></mat-divider>
             <div class="description">
-                Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia porrigitur Nili, laeva
-                Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam plagam Nicator Seleucus occupatam
-                auxit magnum in modum, cum post Alexandri Macedonis obitum successorio iure teneret regna Persidis, efficaciae
-                inpetrabilis rex, ut indicat cognomentum. Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima
-                varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus
-                sollicitudo pervigil veterum per oportunos saltus erexit et cautos. haec quoque civitates habet inter oppida
-                quaedam ingentes Bostram et Gerasam atque Philadelphiam murorum firmitate cautissimas. hanc provinciae inposito
-                nomine rectoreque adtributo obtemperare legibus nostris Traianus conpulit imperator incolarum tumore saepe
-                contunso cum glorioso marte Mediam urgeret et Parthos. Haec ubi latius fama vulgasset missaeque relationes
-                adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus
-                comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et
-                oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique
-                ut solent avia montium petiere celsorum.
+                    Nos scannéristes et chromistes expérimentés assurent la conversion de vos images numériques, la numérisation, la retouche chromatique, le détourage et le recadrage de vos documents transparents ou opaques, image par image, suivant vos demandes dans un souci de qualité toujours optimale. 
             </div>
             <div class="images" FxLayout="row">
                 <div></div>
-                <img src="../../assets/photogravure1.jpg" />
-                <img src="../../assets/photogravure2.jpg" />
+                <img src="../../assets/cannon.jpg" />
+                <img src="../../assets/scanner_flextight.jpg" />
                 <div></div>
-            </div>
-            <div class="images" FxLayout="row">
-                <img src="../../assets/photogravure3.jpg" />
-                <img src="../../assets/photogravure4.jpg" />
             </div>
             <div id="traitement" class="title">
                     Traitement de l'image et de la couleur

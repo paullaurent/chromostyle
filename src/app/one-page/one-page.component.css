@@ -1,0 +1,32 @@
+.card{
+    position: sticky;
+    top:0;
+    z-index: 10;
+    width:100%;
+    margin-bottom: 1%
+}
+.menu{
+    display: flex;
+    background-color: #FCFCFC;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    bottom: 0;
+    position:fixed;
+    width:100%
+}
+
+.chromostyle{
+   width : 40vw;
+}
+
+.logo{
+    color : rgb(16,108,200);
+    margin-right: 5%
+}
+
+button.mat-button{
+    background-color: #FCFCFC
+}
+.image{
+    cursor: pointer;
+}

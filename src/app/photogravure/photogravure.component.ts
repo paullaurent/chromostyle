@@ -1,12 +1,13 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-photogravure',
   templateUrl: './photogravure.component.html',
   styleUrls: ['./photogravure.component.css']
 })
-export class PhotogravureComponent {
+export class PhotogravureComponent{
   canSeeButton="none";
+  @Input() isMobile:boolean;
 
   @HostListener("window:scroll", [])
   scroll(){

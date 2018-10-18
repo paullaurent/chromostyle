@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CheckMobileService } from '../check-mobile.service';
 
 @Component({
   selector: 'app-accueil',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-  imagesURL=["../assets/carousel1.jpg","../assets/carousel2.jpg","../assets/carousel3.jpg","../assets/carousel4.jpg"]
-  captions=["Une équipe du tonnerre","De vrais professionnels","Toujours à l\'écoute"];
+  imagesURL=["../assets/carousel1.jpg"]
+  captions=["Poste de retouches"];
   images=[];
-
+  @Input() isMobile:boolean
+  
   ngOnInit(){
     for (let i =0; i<this.imagesURL.length;i++){
       let image={
@@ -19,5 +21,9 @@ export class AccueilComponent implements OnInit {
       this.images.push(image);
     }
   }
+
+ constructor(
+   public cM: CheckMobileService
+ ){}
 
 }

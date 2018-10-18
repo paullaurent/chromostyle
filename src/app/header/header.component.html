@@ -1,60 +1,61 @@
 <div class="header">
-  <mat-card>
-      <div class="bandeau">
-          <div class="chromostyle" >
-              <img src="../../assets/chromostyle_logo.png" [routerLink]="[ '/']" class="image"  height="90" />
-          </div>
-        
-          <div class="maps" (click)="openMaps()">
-            <mat-icon class="logo">home</mat-icon>
-            <div>
-                <div class="title">
-                    Nous trouver
-                  </div>
-                  <div class="description">
-                    <div>
-                        51, rue charles Coulomb
-                    </div>
-                    <div>
-                    37170, Chambray-lès-Tours
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="mail" (click)="openMail()">
-            <mat-icon class="logo">email</mat-icon>
-            <div>
-              <div class="title">
-                Nous contacter
-              </div>
-              <div class="description">
-                fabrication@chromostyle.fr
-              </div>
-              <div class="description">
-                  06 26 77 22 82
-                </div>
-            </div>
-          </div>
-          <div class="info">
-              <mat-icon class="logo">query_builder</mat-icon>
-              <div>
-                <div class="title">
-                  Nos horaires
-                </div>
-                <div class="description">
-                  lun-ven : 8h30-17h30
-                </div>
-              </div>
-            </div>
-        </div>
-  </mat-card>
-      <div class="menu">
-          <button  mat-button [routerLink]="[ '/']" (selected)="true">Accueil</button>
-          <button  mat-button [routerLink]="[ '/equipe']">Notre équipe</button>
-          <button  mat-button>Publication</button>
-          <button  mat-button [routerLink]="[ '/photogravure']">Photogravure</button>
-          <button  mat-button>Informatique éditoriale</button>
+  <mat-card class="card">
+    <div class="bandeau">
+      <div class="chromostyle">
+        <img src="../../assets/chromostyle_logo.png" [routerLink]="[ '/']" class="image" height="80vh" />
       </div>
-      
-      <hr class="second_line">
+
+      <div class="maps" (click)="openMaps()">
+        <mat-icon class="logo">home</mat-icon>
+        <div>
+          <div class="title">
+            Nous trouver
+          </div>
+          <div class="description">
+            <div>
+              51, rue charles Coulomb
+            </div>
+            <div>
+              37170, Chambray-lès-Tours
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mail" [routerLink]="[ '/nous-contacter']">
+        <mat-icon class="logo">email</mat-icon>
+        <div>
+          <div class="title">
+            Nous contacter
+          </div>
+          <div class="description">
+            fabrication@chromostyle.fr
+          </div>
+          <div class="description">
+            06 26 77 22 82
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <mat-icon class="logo">query_builder</mat-icon>
+        <div>
+          <div class="title">
+            Nos horaires
+          </div>
+          <div class="description">
+            lun-ven : 8h30-17h30
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+  <div class="menu">
+    <button mat-button [routerLink]="[ '/']" (selected)="true">Accueil</button>
+    <button mat-button>Publication</button>
+    <button mat-button [routerLink]="[ '/photogravure']">Photogravure</button>
+    <button mat-button>Informatique éditoriale</button>
+  </div>
+
+  <hr class="line">
 </div>
+
+

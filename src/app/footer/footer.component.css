@@ -2,3 +2,11 @@ div{
     background-color: #F1F1F1;
     text-align: center;
 }
+.element{
+    width: 33%
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -12,11 +12,16 @@
 .card{
     padding-top : 0!important;
     padding-left : 0!important;
-    padding-right : 0!important
+    padding-right : 0!important;
+    width : 30%;
+    min-width: 200px;
 }
 
 .container{
     padding:1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .content{
@@ -24,13 +29,8 @@
     padding-top:12px;
     padding-bottom:24px
 }
-.fa-circle{
-    
-    color:rgb(16,108,200);
-    
-}
 
 .circle{
     background-color:rgb(16,108,200);;
-   color: white
+    color: white
 }

@@ -1,17 +1,20 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 .bandeau{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%
 }
 .chromostyle{
-    width: calc(50vw);
+   width : 40vw;
 }
+
 .header{
-    margin-bottom: 1%
+    margin-bottom: 1%;
 }
 .info{
-    display: flex
+    display: flex;
+    right: 5%
 }
 .maps{
     display: flex;
@@ -25,10 +28,8 @@
     color : rgb(16,108,200);
     margin-right: 5%
 }
-.first_line{
-    border-width: 2px
-}
-.second_line{
+
+.line{
     border-color:rgb(16,108,200);
     border-width: 3px;
 }
@@ -49,21 +50,14 @@ button.mat-button{
     cursor: pointer;
 }
 
-.button{
-    background-color: #4CAF50; /* Green */
-
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.button:hover{
-    background-color: green;
-}
 .menu{
     display: flex;
     flex-wrap: wrap;
+    height: 25%
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
 }

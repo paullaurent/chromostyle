@@ -6,19 +6,26 @@ import { HeaderComponent } from './header/header.component';
 import { carouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component'
 import { AppRoutingModule } from './/app-routing.module';
-import { MatIconModule,MatMenuModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatIconModule,MatMenuModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatCardModule, MatListModule, MatDividerModule, MatInputModule, MatStepperModule, MatSelectModule } from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MentionsComponent } from './mentions/mentions.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SwipeService } from './slideshow/swipe.service';
 import { TransferState } from '@angular/platform-browser';
-import{ NotfoundComponent } from './notfound/notfound.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 import { PhotogravureComponent } from './photogravure/photogravure.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EquipeComponent } from './equipe/equipe.component';
+import { EmailComponent } from './email/email.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { OnePageComponent } from './one-page/one-page.component';
+import { PublicationComponent } from './publication/publication.component';
+import { InformatiqueComponent } from './informatique/informatique.component';
 
 
 
@@ -33,14 +40,17 @@ import { EquipeComponent } from './equipe/equipe.component';
     SlideshowComponent,
     NotfoundComponent,
     PhotogravureComponent,
-    EquipeComponent
+    EquipeComponent,
+    EmailComponent,
+    OnePageComponent,
+    PublicationComponent,
+    InformatiqueComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    FlexLayoutModule,
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
@@ -49,8 +59,15 @@ import { EquipeComponent } from './equipe/equipe.component';
     MatListModule,
     MatDividerModule,
     HttpClientModule,
+    MatInputModule,
+    MatStepperModule,
+    FormsModule,
+    MatSelectModule,
+    FlexLayoutModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   exports:[
     SlideshowComponent

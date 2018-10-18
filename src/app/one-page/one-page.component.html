@@ -1,0 +1,24 @@
+<mat-card class="card">
+  <div class="chromostyle">
+    <img src="../../assets/chromostyle_logo.png" [routerLink]="[ '/']" class="image" height="80vh" />
+  </div>
+</mat-card>
+<app-accueil [isMobile]="true"></app-accueil>
+<app-publication></app-publication>
+<app-photogravure [isMobile]="true"></app-photogravure>
+<app-informatique></app-informatique>
+
+<div class="menu">
+  <button mat-button>
+    <mat-icon>book</mat-icon>
+    <div>Publication</div>
+  </button>
+  <button mat-button>
+    <mat-icon>color_lens</mat-icon>
+    <div>Photogravure</div>
+  </button>
+  <button mat-button>
+    <mat-icon>computer</mat-icon>
+    <div>Informatique</div>
+  </button>
+</div>

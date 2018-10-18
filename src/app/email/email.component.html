@@ -1,0 +1,58 @@
+Nous envoyer un email
+<mat-divider></mat-divider>
+<mat-vertical-stepper #stepper>
+  <mat-step [stepControl]="groupeNom">
+    <form [formGroup]="groupeNom">
+      <ng-template matStepLabel>Vous</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="NOM, Prénom" formControlName="nomClient" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="groupeEntreprise">
+    <form [formGroup]="groupeEntreprise">
+      <ng-template matStepLabel>Votre entreprise</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Nom de votre entreprise" formControlName="nomEntreprise" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Ville de votre entreprise" formControlName="villeEntreprise" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="groupeEmail">
+    <form [formGroup]="groupeEmail">
+      <ng-template matStepLabel>Votre demande</ng-template>
+      <mat-form-field>
+        <mat-select placeholder="Objet" formControlName="objet">
+          <mat-option value="option">Question technique</mat-option>
+          <mat-option value="option">Devis</mat-option>
+          <mat-option value="option">Question générale</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Adresse Email"formControlName="email" [errorStateMatcher]="matcher">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Merci d'entrer une adresse email valide
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          L'email est obiglatoire pour vous répondre
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput formControlName="message" placeholder="Votre message"></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button (click)="envoyer()">Envoyer</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-vertical-stepper>
